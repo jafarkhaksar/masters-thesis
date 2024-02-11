@@ -1,0 +1,45 @@
+\begin{flushleft}
+	\begin{tikzpicture}
+		\begin{axis}[
+			% Insert parameters here
+			scale=1,
+			clip=false,
+			xmin = 0, xmax = 15,
+			ymin = 0, ymax = 15,
+			axis lines = left,
+			xtick = {0},
+			ytick= \empty,
+			]
+			% Insert commands here
+			% Labels of axes
+			\node [right] at (current axis.right of origin) {$mp$};
+			\node [above] at (current axis.above origin) {$w$};
+			\addplot[domain = 6.43:15, samples =
+			20, color = black, thick, dotted]{x};
+			\addplot[domain = 0:6.43, samples =
+			20, color = blue, thick]{x};
+			\node[below] at (12, 11.5) {$\scriptstyle w=mp$};
+			\node[below] at (12, 8) {$\scriptstyle w=\frac{1}{1+\tau}mp$};
+			%\node[right] at (15, 15) {$w=mp$};
+			\addplot[domain = 6.43:15, samples =
+			20, color = blue, thick]{0.7*x};
+			\addplot[domain = 0:6.43, samples =
+			20, color = blue, thick, dotted]{0.7*x};
+			\addplot[color = blue, mark=o, mark size=3pt]
+			coordinates {(6.43, 6.43)};
+			%\node[right] at (15, 10.5) {$w=\displaystyle\frac{1}{1+\tau}mp$};
+			%\addplot[domain = 0:6.43, samples =
+			%20, color = blue, thick]{0};
+			\addplot[domain = 0:15, samples =
+			20, color = red, thin]{4.5};
+			\node[left] at (0, 4.5) {$w_{min}$};
+			\addplot[color = black, dashed]
+			coordinates {(4.5, 0) (4.5, 4.5)};
+			\node[below] at (4.5, 0) {$w_{min}$};
+			\addplot[color = black, dashed]
+			coordinates {(6.43, -0.9) (6.43, 6.43) (0, 6.43)};
+			\node[below] at (6.43, -1) {$(1+\tau) w_{min}$};
+			\node[left] at (0, 6.43) {$(1+\tau) w_{min}$};
+		\end{axis}
+	\end{tikzpicture}
+\end{flushleft}

@@ -1,5 +1,5 @@
 # masters-thesis
-This repository contains some of the R and Stata codes I generated to conduct my masters thesis.
+This repository contains some of the codes I generated to conduct my masters thesis.
 
 ### Abstract
 In this paper, first, I document a number of facts about informal employment among Iranian private-sector wage-earners, which is marked by a lack of Social Security enlisting by employer. Then, I test the hypothesis that the minimum wage policy encourages firms to informally hire (a fraction of) their workforce because this policy limits their ability to pass Social Security contributions through workers' wages. I exploit the differential exposure of 31 Iranian provinces to the minimum wage law from 2005 to 2018. Allowing for the likely endogeneity problem, the differential exposure can generate quasi-random variations since Iranian provinces have neither independent minimum wages nor the discretion to drive the national minimum wage. Corrected LSDV estimates rule out even small positive effects of minimum wage on informal employment. I conclude by providing suggestive evidence that informal work among Iranian wage-earners is no longer a low-wage phenomenon.
